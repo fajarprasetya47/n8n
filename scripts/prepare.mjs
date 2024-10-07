@@ -7,4 +7,5 @@ if (process.env.CI || process.env.DOCKER_BUILD) {
 	process.exit(0);
 }
 
-execSync('./node_modules/.bin/lefthook install', { stdio: 'inherit' });
+execSync('node_modules\\.bin\\lefthook.cmd install', { stdio: 'inherit' });
+// execSync('./node_modules/.bin/lefthook install', { stdio: 'inherit' });
