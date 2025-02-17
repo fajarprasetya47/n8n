@@ -213,10 +213,12 @@ export const useUIStore = defineStore(STORES.UI, () => {
 
 	const logo = computed(() => {
 		const { releaseChannel } = settingsStore.settings;
-		const suffix = appliedTheme.value === 'dark' ? '-dark.svg' : '.svg';
-		return `static/logo/${
-			releaseChannel === 'stable' ? 'expanded' : `channel/${releaseChannel}`
-		}${suffix}`;
+		// const suffix = appliedTheme.value === 'dark' ? '-dark.svg' : '.svg';
+		const suffix = appliedTheme.value === 'dark' ? 'LogoLinkra_white.png' : 'LogoLinkra.png';
+		return `static/${suffix}`
+		// return `static/logo/${
+		// 	releaseChannel === 'stable' ? 'expanded' : `channel/${releaseChannel}`
+		// }${suffix}`;
 	});
 
 	const contextBasedTranslationKeys = computed(() => {

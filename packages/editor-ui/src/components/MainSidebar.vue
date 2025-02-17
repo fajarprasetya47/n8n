@@ -156,7 +156,8 @@ const mainMenuItems = ref([
 const isCollapsed = computed(() => uiStore.sidebarMenuCollapsed);
 
 const logoPath = computed(
-	() => basePath.value + (isCollapsed.value ? 'static/logo/collapsed.svg' : uiStore.logo),
+	() => basePath.value + (isCollapsed.value ? 'static/LinkraFavicon.png' : uiStore.logo),
+	// () => basePath.value + (isCollapsed.value ? 'static/logo/collapsed.svg' : uiStore.logo),
 );
 
 const hasVersionUpdates = computed(
@@ -397,7 +398,8 @@ const checkWidthAndAdjustSidebar = async (width: number) => {
 		img {
 			position: relative;
 			left: 1px;
-			height: 20px;
+			// height: 20px;
+			height: 48px;
 		}
 	}
 

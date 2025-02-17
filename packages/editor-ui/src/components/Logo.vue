@@ -23,6 +23,7 @@ export default defineComponent({
 
 <style lang="scss" module>
 .img {
-	height: 32px;
+	height: 64px;
+	// height: 32px;
 }
 </style>
